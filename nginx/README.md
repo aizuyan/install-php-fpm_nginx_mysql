@@ -2,7 +2,7 @@
 
 ### 安装步骤
 #### 解压源码包
-```sh
+```shell
 $tar -zxvf nginx-1.8.0.tar.gz
 $tar -zxvf pcre-8.36.tar.gz
 $tar -zxvf zlib-1.2.8.tar.gz
@@ -10,9 +10,9 @@ $tar -zxvf zlib-1.2.8.tar.gz
 #### 安装依赖包
 ```sh
 $sudo apt-get install openssl openssl-devel
-``
+```
 #### 编译选项
-```sh
+```shell
 ./configure \
 --prefix=/usr/local \
 --sbin-path=/usr/local/nginx/nginx \
