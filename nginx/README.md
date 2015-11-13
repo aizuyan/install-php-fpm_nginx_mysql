@@ -14,13 +14,13 @@ $sudo apt-get install openssl openssl-devel
 #### 编译选项
 ```sh
 $./configure \
-$--prefix=/usr/local \
-$--sbin-path=/usr/local/nginx/nginx \
-$--conf-path=/usr/local/nginx/nginx.conf \
-$--pid-path=/usr/local/nginx/nginx.pid \
-$--with-http_ssl_module \
-$--with-pcre=../pcre-8.36 \
-$--with-zlib=../zlib-1.2.8
+> --prefix=/usr/local \
+> --sbin-path=/usr/local/nginx/nginx \
+> --conf-path=/usr/local/nginx/nginx.conf \
+> --pid-path=/usr/local/nginx/nginx.pid \
+> --with-http_ssl_module \
+> --with-pcre=../pcre-8.36 \
+> --with-zlib=../zlib-1.2.8
 $make
 $make install
 ```
@@ -42,12 +42,12 @@ $/usr/local/nginx -s stop|quit|reload|reopen  #停止或者重启nginx
 ```sh
 $git clone https://github.com/openresty/echo-nginx-module
 $./configure \
-$--prefix=/usr/local \
-$--sbin-path=/usr/local/nginx/nginx \
-$--conf-path=/usr/local/nginx/nginx.conf \
-$--pid-path=/usr/local/nginx/nginx.pid \
-$--with-http_ssl_module \
-$--with-pcre=../pcre-8.36 \
-$--with-zlib=../zlib-1.2.8 \
-$--add-module=../echo-nginx-module
+> --prefix=/usr/local \
+> --sbin-path=/usr/local/nginx/nginx \
+> --conf-path=/usr/local/nginx/nginx.conf \
+> --pid-path=/usr/local/nginx/nginx.pid \
+> --with-http_ssl_module \
+> --with-pcre=../pcre-8.36 \
+> --with-zlib=../zlib-1.2.8 \
+> --add-module=../echo-nginx-module
 ```
